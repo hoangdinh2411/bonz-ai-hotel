@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking page</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+
+  </head>
+  <body>
+    <div id="wrapper">
+      <section class="nav-bar">
+        <aside class="nav-bar__actions">
+          <label for="modal-checkbox">
+            <span class="nav-bar__actions__menu-bar">
+              <iconify-icon icon="dashicons:menu"></iconify-icon>
+              <input type="checkbox" name="" id="modal-checkbox" hidden />
+
+              <div class="modal modal--dropdown">
+                <label class="modal__overlay" for="modal-checkbox"></label>
+                <nav class="modal__body ">
+                  <label class="modal__menu__close-icon" for="modal-checkbox"
+                    >X</label
+                  >
+
+                  <ul class="menu">
+                    <li class="menu__items ">
+                      <img
+                        src="assets/logo/bonz.ai-logo-black-symbol.png"
+                        class="menu__item-marker"
+                        alt=""
+                      />
+                      <a href="index.html" class="menu__links">Home</a>
+                    </li>
+                    <li class="menu__items active">
+                      <img
+                        src="assets/logo/bonz.ai-logo-black-symbol.png"
+                        class="menu__item-marker"
+                        alt=""
+                      />
+                      <a h class="menu__links">Booking</a>
+                    </li>
+
+                    <li class="menu__items">
+                      <img
+                        src="assets/logo/bonz.ai-logo-black-symbol.png"
+                        class="menu__item-marker"
+                        alt=""
+                      />
+
+                      <a href="about.html" class="menu__links">About</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </span>
+          </label>
+
+          <a href="booking.html" class="btn btn--navbar">
+            <iconify-icon icon="simple-line-icons:calender"></iconify-icon>
+            Book now
+          </a>
+          
+        </aside>
+        <aside class="nav-bar__logo">
+          <a href="/index.html" class="logo__link">
+            <img
+              src="assets/logo/bonz.ai-logo-white-portrait.png"
+              alt=""
+              class="logo__image"
+            />
+          </a>
+        </aside>
+      </section>
+      <section class="slides-container">
+       
+      </section>
+      <main class="main-content">
+        <article class="rooms" id="rooms">
+          <h1 class="main-content__section-rubric">Our Rooms</h1>
+
+        <form action="POST" class="search-form">
+          <input type="text" name="" id="" placeholder="Search room ...">       
+          <button type="submit" class="btn btn--search">Search</button>   
+        </form>
+        <input type="checkbox" name="" id="booking-modal" hidden>
+        
+        <!-- Modal  -->
+        <div class="modal modal--booking">
+          <label class="modal__overlay" for="booking-modal"></label>
+          <div class="modal__body">
+            <label class="modal__menu__close-icon" for="booking-modal"
+              >X</label
+            >
+            <form action="POST" class="booking-form" autocomplete="off">
+              <h6 class="booking-form__title">Booking</h6>
+              <aside class="booking-form__fields">
+                <label for="select-room">Select room</label>
+                <select name="" id="select-room" >
+                  <option value="0">Select room</option>
+                  <option value="1">Room 1 </option>
+                  <option value="2">Room 2</option>
+                  <option value="3">Room 3</option>
+                </select>
+              </aside>
+
+              <aside class="booking-form__fields">
+                <label for="fullName">Full name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter here...">
+              </aside>
+
+              <aside class="booking-form__fields">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" placeholder="Enter here...">
+              </aside>
+
+              <aside class="booking-form__fields">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter here...">
+              </aside>
+
+              <aside class="booking-form__fields">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter here...">
+              </aside>
+              <button type="submit" class="btn btn--booking" value="Submit">Booking</button>
+            </form>
+          </div>
+        </div>
+          <p class="rooms__introduce">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Repudiandae, quidem sapiente provident ducimus vel reprehenderit
+            libero architecto tenetur esse similique repellat inventore
+            doloribus? Repellendus deserunt autem explicabo veritatis similique
+            totam!
+          </p>
+          <article>
+            <section class="room-detail">
+              <img
+                src="assets/photos/01-day.jpg"
+                alt=""
+                class="room-detail__image"
+              />
+              <figcaption class="room-detail__content">
+                <figure>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                  distinctio inventore vitae similique, numquam eveniet quaerat
+                  eum deleniti omnis ea, odio porro cumque asperiores alias amet,
+                  recusandae consequuntur nam. Magni?
+                  <p> Price: 200$ / day </p>
+                </figure>
+  
+                <label for="booking-modal">
+                  <span class="btn btn--rooms">Book now</span>
+                </label>
+              </figcaption>
+            </section>
+            <section class="room-detail room-detail--reverse">
+              <img
+                src="assets/photos/02-night.jpg"
+                alt=""
+                class="room-detail__image"
+              />
+              <figcaption class="room-detail__content">
+                <figure>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                  distinctio inventore vitae similique, numquam eveniet quaerat
+                  eum deleniti omnis ea, odio porro cumque asperiores alias amet,
+                  recusandae consequuntur nam. Magni?
+                  <p> Price: 200$ / day </p>
+                </figure>
+                 <label for="booking-modal">
+                  <span class="btn btn--rooms">Book now</span>
+                </label>
+              </figcaption>
+            </section>
+            <section class="room-detail">
+              <img
+                src="assets/photos/03-day.jpg"
+                alt=""
+                class="room-detail__image"
+              />
+              <figcaption class="room-detail__content">
+                <figure>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                  distinctio inventore vitae similique, numquam eveniet quaerat
+                  eum deleniti omnis ea, odio porro cumque asperiores alias amet,
+                  recusandae consequuntur nam. Magni?
+                  <p> Price: 200$ / day </p>
+                </figure>
+                 <label for="booking-modal">
+                  <span class="btn btn--rooms">Book now</span>
+                </label>
+              </figcaption>
+            </section>
+            <section class="room-detail room-detail--reverse">
+              <img
+                src="assets/photos/04-day.jpg"
+                alt=""
+                class="room-detail__image"
+              />
+              <figcaption class="room-detail__content">
+                <figure>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                  distinctio inventore vitae similique, numquam eveniet quaerat
+                  eum deleniti omnis ea, odio porro cumque asperiores alias amet,
+                  recusandae consequuntur nam. Magni?
+                  <p> Price: 200$ / day </p>
+                </figure>
+                 <label for="booking-modal">
+                  <span class="btn btn--rooms">Book now</span>
+                </label>
+              </figcaption>
+            </section>
+            <section class="room-detail">
+              <img
+                src="assets/photos/05-day.jpg"
+                alt=""
+                class="room-detail__image"
+              />
+              <figcaption class="room-detail__content">
+                <figure>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                  distinctio inventore vitae similique, numquam eveniet quaerat
+                  eum deleniti omnis ea, odio porro cumque asperiores alias amet,
+                  recusandae consequuntur nam. Magni?
+                  <p> Price: 200$ / day </p>
+                </figure>
+                 <label for="booking-modal">
+                  <span class="btn btn--rooms">Book now</span>
+                </label>
+              </figcaption>
+            </section>
+            <section class="room-detail room-detail--reverse">
+              <img
+                src="assets/photos/06-day.jpg"
+                alt=""
+                class="room-detail__image"
+              />
+              <figcaption class="room-detail__content">
+                <figure>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                  distinctio inventore vitae similique, numquam eveniet quaerat
+                  eum deleniti omnis ea, odio porro cumque asperiores alias amet,
+                  recusandae consequuntur nam. Magni?
+                  <p> Price: 200$ / day </p>
+                </figure>
+                 <label for="booking-modal">
+                  <span class="btn btn--rooms">Book now</span>
+                </label>
+              </figcaption>
+            </section>
+            <section class="room-detail">
+              <img
+                src="assets/photos/07-day.jpg"
+                alt=""
+                class="room-detail__image"
+              />
+              <figcaption class="room-detail__content">
+                <figure>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                  distinctio inventore vitae similique, numquam eveniet quaerat
+                  eum deleniti omnis ea, odio porro cumque asperiores alias amet,
+                  recusandae consequuntur nam. Magni?
+                  <p> Price: 200$ / day </p>
+                </figure>
+                 <label for="booking-modal">
+                  <span class="btn btn--rooms">Book now</span>
+                </label>
+              </figcaption>
+            </section>
+            <section class="room-detail room-detail--reverse">
+              <img
+                src="assets/photos/08-day.jpg"
+                alt=""
+                class="room-detail__image"
+              />
+              <figcaption class="room-detail__content">
+                <figure>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                  distinctio inventore vitae similique, numquam eveniet quaerat
+                  eum deleniti omnis ea, odio porro cumque asperiores alias amet,
+                  recusandae consequuntur nam. Magni?
+                  <p> Price: 200$ / day </p>
+                </figure>
+                 <label for="booking-modal">
+                  <span class="btn btn--rooms">Book now</span>
+                </label>
+              </figcaption>
+            </section>
+            <section class="room-detail">
+              <img
+                src="assets/photos/09-day.jpg"
+                alt=""
+                class="room-detail__image"
+              />
+              <figcaption class="room-detail__content">
+                <figure>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                  distinctio inventore vitae similique, numquam eveniet quaerat
+                  eum deleniti omnis ea, odio porro cumque asperiores alias amet,
+                  recusandae consequuntur nam. Magni?
+                  <p> Price: 200$ / day </p>
+                </figure>
+                 <label for="booking-modal">
+                  <span class="btn btn--rooms">Book now</span>
+                </label>
+              </figcaption>
+            </section>
+          </article>
+        </article>
+      </main>
+      <footer class="footer">
+        <section class="footer__logo">
+          <a href="/index.html" class="footer__logo__link">
+            <img
+              src="assets/logo/bonz.ai-logo-white-portrait-full.png"
+              alt=""
+              class="footer__logo__image"
+            />
+          </a>
+        </section>
+        <article class="footer__content">
+          <aside class="options">
+            <p class="footer__content__rubric">Services</p>
+            <a href="#services">Spa</a>
+            <a href="#services">Gym</a>
+            <a href="#services">Restaurant</a>
+            <a href="#services">Wedding</a>
+          </aside>
+        </article>
+        <aside class="credit-cards">
+          <p class="footer__content__rubric">Credit card accepted</p>
+
+          <img src="assets/photos/pay/visa.png" alt="" />
+          <img src="assets/photos/pay/j.png" alt="" />
+          <img src="assets/photos/pay/carvisit.png" alt="" />
+        </aside>
+        <aside class="copy-right"><p>&copy; Copyright 2022 by William</p></aside>
+      </footer>
+  </body>
+</html>

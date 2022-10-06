@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Landing page</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <section class="nav-bar">
+        <aside class="nav-bar__actions">
+          <label for="modal-checkbox">
+            <span class="nav-bar__actions__menu-bar">
+              <iconify-icon icon="dashicons:menu"></iconify-icon>
+              <input type="checkbox" name="" id="modal-checkbox" hidden />
+
+              <div class="modal modal--dropdown">
+                <label class="modal__overlay" for="modal-checkbox"></label>
+                <nav class="modal__body">
+                  <label class="modal__menu__close-icon" for="modal-checkbox"
+                    >X</label
+                  >
+
+                  <ul class="menu">
+                    <li class="menu__items active">
+                      <img
+                        src="assets/logo/bonz.ai-logo-black-symbol.png"
+                        class="menu__item-marker"
+                        alt=""
+                      />
+                      <a href="index.html" class="menu__links">Home</a>
+                    </li>
+                    <li class="menu__items">
+                      <img
+                        src="assets/logo/bonz.ai-logo-black-symbol.png"
+                        class="menu__item-marker"
+                        alt=""
+                      />
+                      <a href="booking.html" class="menu__links">Booking</a>
+                    </li>
+
+                    <li class="menu__items">
+                      <img
+                        src="assets/logo/bonz.ai-logo-black-symbol.png"
+                        class="menu__item-marker"
+                        alt=""
+                      />
+
+                      <a href="about.html" class="menu__links">About</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </span>
+          </label>
+
+       
+
+          <a href="booking.html" class="btn btn--navbar">
+            <iconify-icon icon="simple-line-icons:calender"></iconify-icon>
+            Book now
+          </a>
+        </aside>
+        <aside class="nav-bar__logo">
+          <a href="/index.html" class="logo__link">
+            <img
+              src="assets/logo/bonz.ai-logo-white-portrait.png"
+              alt=""
+              class="logo__image"
+            />
+          </a>
+        </aside>
+      </section>
+      <section class="slides-container">
+        <a href="booking.html" class="btn btn--slide">
+          <iconify-icon icon="simple-line-icons:calender"></iconify-icon>
+          Book now
+        </a>
+      </section>
+      <main class="main-content">
+        <article class="rooms" id="rooms">
+          <h1 class="main-content__section-rubric">Our Rooms</h1>
+          <p class="rooms__introduce">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Repudiandae, quidem sapiente provident ducimus vel reprehenderit
+            libero architecto tenetur esse similique repellat inventore
+            doloribus? Repellendus deserunt autem explicabo veritatis similique
+            totam!
+          </p>
+
+          <section>
+            <figure class="room-detail">
+              <img
+                src="assets/photos/01-day.jpg"
+                alt=""
+                class="room-detail__image"
+              />
+              <figcaption class="room-detail__content">
+                <figure>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maiores distinctio inventore vitae similique, numquam eveniet
+                  quaerat eum deleniti omnis ea, odio porro cumque asperiores
+                  alias amet, recusandae consequuntur nam. Magni?
+                  <p>Price: 200$ / day</p>
+                </figure>
+              </figcaption>
+            </figure>
+            <figure class="room-detail room-detail--reverse">
+              <img
+                src="assets/photos/02-night.jpg"
+                alt=""
+                class="room-detail__image"
+              />
+              <figcaption class="room-detail__content">
+                <figure>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maiores distinctio inventore vitae similique, numquam eveniet
+                  quaerat eum deleniti omnis ea, odio porro cumque asperiores
+                  alias amet, recusandae consequuntur nam. Magni?
+                  <p>Price: 200$ / day</p>
+                </figure>
+              </figcaption>
+            </figure>
+            <figure class="room-detail">
+              <img
+                src="assets/photos/04-day.jpg"
+                alt=""
+                class="room-detail__image"
+              />
+              <figcaption class="room-detail__content">
+                <figure>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maiores distinctio inventore vitae similique, numquam eveniet
+                  quaerat eum deleniti omnis ea, odio porro cumque asperiores
+                  alias amet, recusandae consequuntur nam. Magni?
+                  <p>Price: 200$ / day</p>
+                </figure>
+              </figcaption>
+            </figure>
+          </section>
+          <a href="booking.html" class="btn btn--rooms">See more</a>
+        </article>
+        <article class="services" id="services">
+          <h1 class="main-content__section-rubric">Our services</h1>
+
+          <section class="service-detail__container">
+            <input hidden type="radio" name="services" id="spa" checked />
+            <input hidden type="radio" name="services" id="wedding" />
+            <input hidden type="radio" name="services" id="restaurant" />
+            <input hidden type="radio" name="services" id="gym" />
+            <div class="services__list">
+              <label for="spa">Spa</label>
+              <label for="wedding">Wedding</label>
+              <label for="restaurant">Restaurant</label>
+              <label for="gym">Gym</label>
+            </div>
+            <article class="service-detail service-detail--spa">
+              <img
+                src="assets/photos/spa.jpg"
+                alt=""
+                class="service-detail__image"
+              />
+              <aside class="service-detail__content-container">
+                <p class="service-detail__content">
+                  Eos accusamus molestiae, voluptate perferendis quam numquam
+                  non! Dolorum distinctio dolor, omnis similique consequuntur
+                  reprehenderit.
+                </p>
+              </aside>
+            </article>
+            <article class="service-detail service-detail--wedding">
+              <img
+                src="assets/photos/wedding.jpg"
+                alt=""
+                class="service-detail__image"
+              />
+              <aside class="service-detail__content-container">
+                <p class="service-detail__content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cupiditate mollitia, recusandae ad assumenda sit ipsum. Eos
+                  accusamus molestiae,
+                </p>
+              </aside>
+            </article>
+            <article class="service-detail service-detail--restaurant">
+              <img
+                src="assets/photos/restaurant.jpg"
+                alt=""
+                class="service-detail__image"
+              />
+              <aside class="service-detail__content-container">
+                <p class="service-detail__content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cupiditate mollitia, recusandae ad assumenda sit ipsum. Eos
+                  reprehenderit.
+                </p>
+              </aside>
+            </article>
+            <article class="service-detail service-detail--gym">
+              <img
+                src="assets/photos/gym.jpg"
+                alt=""
+                class="service-detail__image"
+              />
+              <aside class="service-detail__content-container">
+                <p class="service-detail__content">
+                  omnis similique consequuntur reprehenderit.
+                </p>
+              </aside>
+            </article>
+          </section>
+          <a href="about.html" class="btn btn--services">See more</a>
+        </article>
+        <article class="contact">
+          <aside class="contact__info">
+            <h3 class="main-content__section-rubric">Contact us</h3>
+            <p class="contact__info__sub-rubric">
+              Many activities surround our accommodations. You’ ll have a great
+              choice of experiences to live. Consider extending your stay if you
+              want to discover everything before you leave.
+            </p>
+            <ul class="contact__info__content">
+              <li class="contact__info__items">
+                <a
+                  href="https://g.page/FolkuniversitetetGoteborg?share"
+                  class="contact__info__links"
+                >
+                  <iconify-icon icon="carbon:location-filled"></iconify-icon>
+                  Norra Allégatan 6 413 01 Göteborg
+                </a>
+              </li>
+              <li class="contact__info__items">
+                <a href="tel:031106500" class="contact__info__links">
+                  <iconify-icon icon="bxs:phone"></iconify-icon>
+                  031106500
+                </a>
+              </li>
+              <li class="contact__info__items">
+                <a href="mailto:bonz.ai@gmail.com" class="contact__info__links">
+                  <iconify-icon icon="ant-design:mail-outlined"></iconify-icon>
+                  bonz.ai@gmail.com
+                </a>
+              </li>
+            </ul>
+          </aside>
+          <div class="contact__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2131.946662743486!2d11.953252515891862!3d57.70037598111876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff369c462dfb5%3A0xe0d0b895e9004aae!2sNorra%20All%C3%A9gatan%206%2C%202542%2C%20413%2001%20G%C3%B6teborg!5e0!3m2!1sen!2sse!4v1664868641029!5m2!1sen!2sse"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </article>
+      </main>
+      <footer class="footer">
+        <section class="footer__logo">
+          <a href="/index.html" class="footer__logo__link">
+            <img
+              src="assets/logo/bonz.ai-logo-white-portrait-full.png"
+              alt=""
+              class="footer__logo__image"
+            />
+          </a>
+        </section>
+        <article class="footer__content">
+          <aside class="options">
+            <p class="footer__content__rubric">Services</p>
+            <a href="#services">Spa</a>
+            <a href="#services">Gym</a>
+            <a href="#services">Restaurant</a>
+            <a href="#services">Wedding</a>
+          </aside>
+        </article>
+        <aside class="credit-cards">
+          <p class="footer__content__rubric">Credit card accepted</p>
+
+          <img src="assets/photos/pay/visa.png" alt="" />
+          <img src="assets/photos/pay/j.png" alt="" />
+          <img src="assets/photos/pay/carvisit.png" alt="" />
+        </aside>
+        <aside class="copy-right">
+          <p>&copy; Copyright 2022 by William</p>
+        </aside>
+      </footer>
+    </div>
+  </body>
+</html>
